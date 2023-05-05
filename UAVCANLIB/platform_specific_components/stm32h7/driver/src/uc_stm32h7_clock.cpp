@@ -4,6 +4,7 @@
 
 #include <uavcan_stm32h7/clock.hpp>
 #include <uavcan_stm32h7/thread.hpp>
+
 #include "internal.hpp"
 
 #include <cassert>
@@ -337,6 +338,8 @@ SystemClock& SystemClock::instance()
 extern "C" UAVCAN_STM32H7_IRQ_HANDLER(TIMX_IRQHandler)
 {
     UAVCAN_STM32H7_IRQ_PROLOGUE();
+
+    TIMX->SR = 0;
 
     using namespace uavcan_stm32h7::clock;
     UAVCAN_ASSERT(initialized);

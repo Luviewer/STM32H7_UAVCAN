@@ -4,18 +4,15 @@
 
 #pragma once
 
-
-
 #ifndef UAVCAN_STM32_BAREMETAL
-# define UAVCAN_STM32_BAREMETAL 0
+    #define UAVCAN_STM32_BAREMETAL 0
 #endif
-
 
 /**
  * Number of interfaces must be enabled explicitly
  */
 #if !defined(UAVCAN_STM32H7_NUM_IFACES) || (UAVCAN_STM32H7_NUM_IFACES != 1 && UAVCAN_STM32H7_NUM_IFACES != 2)
-# error "UAVCAN_STM32H7_NUM_IFACES must be set to either 1 or 2"
+    #error "UAVCAN_STM32H7_NUM_IFACES must be set to either 1 or 2"
 #endif
 
 /**
@@ -23,6 +20,6 @@
  * e.g. -DUAVCAN_STM32H7_TIMER_NUMBER=2
  */
 #ifndef UAVCAN_STM32H7_TIMER_NUMBER
-// In this case the clock driver should be implemented by the application
-# define UAVCAN_STM32H7_TIMER_NUMBER 0
+    // In this case the clock driver should be implemented by the application
+    #define UAVCAN_STM32H7_TIMER_NUMBER 0
 #endif

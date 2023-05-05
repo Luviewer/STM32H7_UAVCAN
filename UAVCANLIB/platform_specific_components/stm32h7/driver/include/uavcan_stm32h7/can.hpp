@@ -6,8 +6,8 @@
 
 #include <uavcan/driver/can.hpp>
 #include <uavcan_stm32h7/build_config.hpp>
-#include <uavcan_stm32h7/uavcan_fdcan.hpp>
 #include <uavcan_stm32h7/thread.hpp>
+#include <uavcan_stm32h7/uavcan_fdcan.hpp>
 
 namespace uavcan_stm32h7 {
 /**

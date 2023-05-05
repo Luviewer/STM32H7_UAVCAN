@@ -48,6 +48,7 @@
 #include <cstring>
 #include <uavcan_stm32h7/can.hpp>
 #include <uavcan_stm32h7/clock.hpp>
+
 #include "internal.hpp"
 
 #include <chip.h> // See http://uavcan.org/Implementations/Libuavcan/Platforms/STM32/

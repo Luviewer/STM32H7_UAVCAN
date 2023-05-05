@@ -13,7 +13,6 @@
  */
 #define UAVCAN_STM32H7_LOG(...) ((void)0)
 
-
 /**
  * IRQ handler macros
  */
@@ -49,9 +48,7 @@ struct CriticalSectionLocker {
     }
 };
 
-namespace clock
-{
-uavcan::uint64_t getUtcUSecFromCanInterrupt();
+namespace clock {
+    uavcan::uint64_t getUtcUSecFromCanInterrupt();
 }
 }
-

@@ -1,0 +1,26 @@
+{
+    "C_Cpp.autoAddFileAssociations": false,
+    "files.associations": {
+        "*.h": "c",
+        "*.c": "c",
+        "*.cpp": "cpp",
+        "*.hpp": "cpp",
+        "Sconstruct": "python",
+        "SConscript": "python",
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "git.ignoreLimitWarning": true,
+    "cmake.configureOnOpen": false,
+    "cSpell.allowCompoundWords": true,
+    "cSpell.diagnosticLevel": "Hint",
+    "cSpell.showStatus": false,
+    "cSpell.words": [
+            "fmt",
+            "esc",
+            "rtthread"
+    ],
+    "editor.defaultFormatter": "xaver.clang-format",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+}
